@@ -18,6 +18,7 @@ while True:
                     body = messages["items"][0]["last_message"]["text"]
                     if body.lower() == "норм":
                         vk.method("messages.send",{"peer_id": id,"message":"Это хорошо, я рад за тебя)","random_id": random.randint(0,999999992)})
+                        break
                     time.sleep(1)
         else:
             vk.method("messages.send",{"peer_id": id,"message":"Шо ти от мени хочешь Вася?","random_id": random.randint(0,999999998)})
