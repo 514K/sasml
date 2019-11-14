@@ -10,7 +10,6 @@ while True:
         body = messages["items"][0]["last_message"]["text"]
         if body.lower() == "привет":
             vk.method("messages.send",{"peer_id": id,"message":"Ку! Как жизнь?","random_id": random.randint(0,999999990)}) 
-            sas = 1
             while True:
                 messages = vk.method("messages.getConversations", {"offset":0, "count":20, "filter":"unread"})
                 if messages["count"] >= 1:
@@ -19,10 +18,10 @@ while True:
                     if body.lower() == "норм":
                         vk.method("messages.send",{"peer_id": id,"message":"Это хорошо, я рад за тебя)","random_id": random.randint(0,999999992)})
                         break
-                    time.sleep(1)
                     else:
                         vk.method("messages.send",{"peer_id": id,"message":"Мяу, я тебя не понимаю(","random_id": random.randint(0,999999992)})
                         break
+                    time.sleep(1)
         else:
             vk.method("messages.send",{"peer_id": id,"message":"Шо ти от мени хочешь Вася?","random_id": random.randint(0,999999998)})
     time.sleep(10)
