@@ -12,4 +12,4 @@ while True:
             vk.method("messages.send",{"peer_id": id,"message":"Ку!","random_id": random.randint(0,999999990)})
         else:
             vk.method("messages.send",{"peer_id": id,"message":"Шо ти от мени хочешь Вася?","random_id": random.randint(0,999999998)})
-    time.sleep(10)
+    time.sleep(1000)
