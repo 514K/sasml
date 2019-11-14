@@ -9,7 +9,7 @@ while True:
         id = messages["items"][0]["last_message"]["from_id"]
         body = messages["items"][0]["last_message"]["text"]
         if body.lower() == "привет":
-            vk.method("messages.send",{"peer_id": id,"message":"Привет!","random_id": random.randint(0,999999990)})
+            vk.method("messages.send",{"peer_id": id,"message":"Ку!","random_id": random.randint(0,999999990)})
         else:
             vk.method("messages.send",{"peer_id": id,"message":"Шо ти от мени хочешь Вася?","random_id": random.randint(0,999999998)})
     time.sleep(10)
