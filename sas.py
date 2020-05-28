@@ -115,7 +115,7 @@ while True:
                       "peer_id": id,
                       "message": "Привет, я бот Алексея из 81ПМ, пока могу подсказать только расписание для второго курса, напиши 'Расписание'",
                       "random_id": random.randint(0, 999999998)})
-    time.sleep(1)
+    time.sleep(3)
     if day == datetime.now().day:
         pass
     else:
