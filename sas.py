@@ -24,4 +24,4 @@ while True:
                     time.sleep(1)
         else:
             vk.method("messages.send",{"peer_id": id,"message":"Шо ти от мени хочешь Вася?","random_id": random.randint(0,999999998)})
-    time.sleep(120)
+    time.sleep(100000)
